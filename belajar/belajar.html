@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razza | Front-End Developer Portfolio</title>
+  <link rel="stylesheet" href="belajar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Razza</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Razza</span></h1>
+        <h2 class="hero-role">Front-End Developer</h2>
+        <p class="hero-desc">
+          I craft modern, responsive, and engaging web experiences. Passionate about UI/UX, accessibility, and performance.
+        </p>
+        <div class="hero-socials">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <a href="#projects" class="hero-cta">View Projects</a>
+      </div>
+      <div class="hero-image">
+        <!-- Replace with your photo -->
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Razza Photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-content">
+      <div class="about-image">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Razza About">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate Front-End Developer with a strong foundation in HTML, CSS, and JavaScript. I love building beautiful, accessible, and performant web applications. My focus is on delivering pixel-perfect UI and seamless user experiences.
+        </p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> 2+ years experience in web development</li>
+          <li><i class="fa-solid fa-check"></i> Strong eye for design & detail</li>
+          <li><i class="fa-solid fa-check"></i> Team player & fast learner</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill-card"><i class="fab fa-react"></i> React</div>
+        <div class="skill-card"><i class="fab fa-sass"></i> SASS/SCSS</div>
+        <div class="skill-card"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="skill-card"><i class="fab fa-figma"></i> Figma</div>
+        <div class="skill-card"><i class="fab fa-node-js"></i> Node.js</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Project 1">
+          <div class="project-info">
+            <h3>Modern Portfolio</h3>
+            <p>A responsive portfolio website built with React and styled-components, featuring smooth animations and dark mode.</p>
+            <a href="#" class="project-link" target="_blank">View Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Project 2">
+          <div class="project-info">
+            <h3>Landing Page</h3>
+            <p>High-converting landing page with modern UI, built using HTML, CSS, and vanilla JS. Optimized for speed and SEO.</p>
+            <a href="#" class="project-link" target="_blank">View Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 3">
+          <div class="project-info">
+            <h3>Dashboard UI</h3>
+            <p>Interactive dashboard with charts and data visualization, built with React, Chart.js, and responsive design principles.</p>
+            <a href="#" class="project-link" target="_blank">View Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container contact-content">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+        <p>Interested in working together or want to say hi? Reach out via email or connect on social media!</p>
+        <div class="contact-socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="contact-email">
+          <i class="fa-solid fa-envelope"></i> razza@email.com
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Razza. All rights reserved.
+  </footer>
+</body>
+</html>
