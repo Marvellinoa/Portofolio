@@ -279,7 +279,7 @@ a {
   font-size: 1rem;
   margin-top: 16px;
   border-radius: 16px;
-  box-shadow: 0 16px var(--color-bg-gradient);
+  box-shadow: 0 4px var(--color-bg-gradient);
 }
 
 .photo-box img {
