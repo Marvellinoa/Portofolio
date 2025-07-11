@@ -274,7 +274,6 @@ a {
 .photo-box {
   width: 240px;
   height: 280px;
-  border: 2px solid var(--color-dark);
   color: var(--color-muted);
   font-size: 1rem;
   margin-top: 16px;
