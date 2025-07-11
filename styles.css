@@ -279,14 +279,13 @@ a {
   font-size: 1rem;
   margin-top: 16px;
   border-radius: 16px;
-  box-shadow: 0 4px 16px var(--color-bg-gradient);
+  box-shadow: 0 16px var(--color-bg-gradient);
 }
 
 .photo-box img {
   width: 100%;
   height: 100%;
   border-radius: 16px;
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
 }
 
 .intro-right {
