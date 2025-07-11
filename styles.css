@@ -272,8 +272,8 @@ a {
 }
 
 .photo-box {
-  width: 240px;
-  height: 100%;
+  width: 100%;
+  height: 320px;
   border: 2px solid var(--color-dark);
   color: var(--color-muted);
   font-size: 1rem;
