@@ -18,7 +18,7 @@
     <ul id="navbar-list">
       <li><a href="#" class="navbar-link" data-section="home">Home</a></li>
       <li><a href="#about-section" class="navbar-link" data-section="about-section">About</a></li>
-      <li><a href="#footer-section" class="navbar-link" data-section="footer-section">Contact</a></li>
+      <li><a href="#footer" class="navbar-link" data-section="footer">Contact</a></li>
       <div class="navbar-underline" id="navbar-underline"></div>
     </ul>
   </nav>
@@ -90,8 +90,11 @@
       <div class="portfolio-skill-card"><i class="fab fa-html5"></i> HTML5</div>
       <div class="portfolio-skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
       <div class="portfolio-skill-card"><i class="fab fa-js"></i> JavaScript</div>
-      <div class="portfolio-skill-card"><i class="fab fa-sass"></i> SASS/SCSS</div>
       <div class="portfolio-skill-card"><i class="fab fa-git-alt"></i> Git</div>
+      <div class="portfolio-skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" style="width: 1.5em; height: 1.5em; filter: brightness(0.9) sepia(0.3) hue-rotate(30deg);"> MySQL</div>
+      <div class="portfolio-skill-card"><i class="fab fa-laravel"></i> Laravel</div>
+      <div class="portfolio-skill-card"><i class="fab fa-vuejs"></i> Vue JS</div>
+      <div class="portfolio-skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" style="width: 1.5em; height: 1.5em; filter: brightness(0.85) sepia(0.2) hue-rotate(35deg) saturate(1.3);"> Tailwind CSS</div>
     </div>
   </div>
 </section>
@@ -133,7 +136,10 @@
           Who is <span class="about-highlight">Marvellino Apriedo?</span>
         </h2>
         <div class="about-desc">
-          I am a growing UI/UX Designer based in Yogyakarta, Indonesia, passionate about creating user-friendly and visually appealing designs. With a background in front-end development as a student in SMKN 2 Depok Vocational Highschool, I focus on delivering high-quality code that enhances user experience and performance. My portfolio showcases a variety of projects that highlight my skills in both design and development.
+          <p>
+            I am a UI/UX Designer and front-end enthusiast based in Yogyakarta, Indonesia, passionate about creating clean, user-friendly, and impactful digital experiences. With a background in front-end development, I bridge the gap between design and implementation building responsive and high-performing interfaces.
+            Beyond technical skills, I bring strong communication and leadership experience, allowing me to collaborate effectively and understand user needs deeply. I am continuously learning, growing, and seeking opportunities to create meaningful and innovative digital solutions.
+          </p>  
         </div>
         <div class="about-stats">
           <div class="about-stat-card">
@@ -307,7 +313,7 @@
             Leading a faith-based youth organization with mission-driven programs.
           </div>
           <div class="soft-skill-desc-full">
-            As Chairperson 1 of Youth of Christian, I lead a school-based Christian youth organization dedicated to developing spiritual maturity in young believers. I coordinate meaningful programs and lead a community-oriented atmosphere centered on faith and social growth.
+            As Chairperson 1 of Youth of Christian, I lead a school-based SMKN 2 Depok Sleman Christian youth organization dedicated to developing spiritual maturity in young believers. I coordinate meaningful programs and lead a school-based community atmosphere centered on faith and social growth.
           </div>
           <div class="soft-skill-details">
             <div class="soft-skill-detail-item">
@@ -438,8 +444,7 @@
         <div class="portfolio-card-text">
           <div class="portfolio-number">Festembayo</div>
           <div class="portfolio-card-desc">
-            Festembayo is a School Ticketing website (SMKN 2 Depok Sleman) that I designed and developed, focusing on user experience and visual appeal. The project showcases my skills in front-end development and UI/UX design, creating a seamless and engaging user journey.
-          </div>
+Festembayo School Ticketing Website is a project I designed and developed for SMKN 2 Depok Sleman. It highlights my skills in front-end development and UI/UX design, creating a seamless, engaging, and user-friendly experience for managing and purchasing event tickets. This project reflects my ability to combine visual appeal with functional design to enhance the overall user journey.          </div>
         </div>
       </div>
       <div class="portfolio-card portfolio-card-dark">
@@ -486,10 +491,14 @@
         </button>
       </form>
     </div>
+    
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <p>© 2025 Marvellino Apriedo. All rights reserved.</p>
+      </div>
+    </footer>
   </section>
-  <footer class="footer" id="footer-section">
-    © 2025 Marvellino Apriedo. All rights reserved.
-  </footer>
 
   <!-- Lightbox Modal -->
   <div id="lightbox-modal" class="lightbox-modal">
@@ -560,7 +569,7 @@
       const sectionMap = {
         'home': 0,
         'about-section': document.getElementById('about-section'),
-        'footer-section': document.getElementById('footer-section')
+        'footer': document.getElementById('footer')
       };
 
       let currentLi = null;
@@ -593,10 +602,10 @@
         const docHeight = Math.ceil(document.documentElement.scrollHeight);
 
         if (scrollBottom >= docHeight - 2) {
-          // At the very bottom, force Contact as active
-          activeSection = 'footer-section';
-        } else if (sectionMap['footer-section'] && scrollPos + window.innerHeight - 100 >= sectionMap['footer-section'].offsetTop) {
-          activeSection = 'footer-section';
+          // At the very bottom, set footer as active
+          activeSection = 'footer';
+        } else if (sectionMap['footer'] && scrollPos + 120 >= sectionMap['footer'].offsetTop) {
+          activeSection = 'footer';
         } else if (sectionMap['about-section'] && scrollPos + 120 >= sectionMap['about-section'].offsetTop) {
           activeSection = 'about-section';
         }
